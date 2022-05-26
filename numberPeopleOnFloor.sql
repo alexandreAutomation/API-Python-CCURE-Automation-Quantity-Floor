@@ -18,7 +18,7 @@ WITH CTE1 AS (SELECT
 						ACVSCore.Access.Personnel
 
 				WHERE MessageType = 'CardAdmitted' and
-					  MessageUTC BETWEEN '2021-1-11 00:00:00' and '2021-30-11 23:59:59'and
+					  MessageUTC BETWEEN '2021-1-10 00:00:00' and '2021-30-10 23:59:59'and
 					  --cast (MessageUTC as date) = cast(getdate() as date) and
 					  Personnel.GUID = ObjectIdentity1 and
 					  Personnel.ObjectID = PersonnelUDF.ObjectID
